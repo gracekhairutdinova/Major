@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./style/style.css">
+    <!-- <link rel="stylesheet" href="./bootstrap-3.4.1-dist/bootstrap-3.4.1-dist/css/bootstrap-theme.min.css"> -->
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Major</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <!-- Navbar -->
+      <div class="navbar-container">
+        <nav class="navbar navbar-default">
+          <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <!-- <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button> -->
+                <img class="navbar-brand navbar-logo" src="./img/Logo.png" alt="logo">
+            </div>
+        
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <div class="navbar-menu-list">
+                <div class="navbar-menu float-left">
+                  <ul class="nav navbar-nav">
+                    <li><a href="#">Вызвать курьера</a></li>
+                    <li><a href="#">Рассчитать стоимость</a></li>
+                    <li><a href="#">Отслеживание груза</a></li>
+                    <li><a href="#">Контакты</a></li>
+                  </ul>
+                </div>
+                <div class="navbar-list float-right">
+                  <div class="location-icon">
+                    <img src="./img/location.png" alt="icon">
+                  </div>
+                  <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                      <a href="#" style="position: relative;" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Выбор региона, город, телефон, название города, регион итд <span style="font-size: 25px; position: absolute; top: 25px; right: -10px;" class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="#">Мурманск</a></li>
+                        <li><a href="#">Новосибирск</a></li>
+                        <li><a href="#">Екатеринбург</a></li>
+                        <!-- <li role="separator" class="divider"></li> -->
+                        <li><a href="#">Самара</a></li>
+                        <li><a href="#">Челябинск</a></li>
+                        <li><a href="#">Омск</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div><!-- /.navbar-collapse -->
+          </div><!-- /.container-fluid -->
+        </nav>
+      </div>
+      <!-- Header content -->
+      <div class="header-content">
+        <div class="header-content-container">
+          <div class="content-container">
+            <!-- Title-logos -->
+            <div class="title-logos-container float-left">
+              <div class="content-title">
+                <h1>Компании, доверяющие нам свои грузы:</h1>
+              </div>
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 content-logo" style="width: 33%;">
+                    <img src="./img/sever.png" alt="sever-logo">
+                  </div>
+                  <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 content-logo" style="width: 33%;">
+                    <img src="./img/derussa.png" alt="derussa-logo">
+                  </div>
+                  <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 content-logo" style="width: 28%;">
+                    <img src="./img/leroy.png" alt="leroy-logo">
+                  </div>
+                  <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 content-logo" style="width: 33%;">
+                    <img class="row-md-offset-8" src="./img/invitro.png" alt="invitro-logo">
+                  </div>
+                  <div class="col-md-4 content-logo" style="width: 28%;">
+                    <img src="./img/bisquite.png" alt="bisquite-logo">
+                  </div>
+                  <div class="row col-md-4 content-logo" style="width: 18%;">
+                    <img src="./img/ultra.png" alt="ultra-kraft-logo">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="button-container float-right">
+              <div>
+                <button style="margin: 10px 0 10px;">Рассчитать стоимость</button>
+              </div>
+              <div>
+                <button style="margin: 10px 0 10px;">Вызвать курьера</button>
+              </div>
+            </div>
+          </div>
+          <!-- Video content -->
+          <div class="video-container">
+            <div class="video-player float-left" style="position: relative;">
+              <img src="./img/small-play.png" style="position: absolute; top: 9px; left: 18px;  width: 60%;">
+            </div>
+            <div class="video-description float-right">
+              <h3>Наше официальное видео</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Main -->
+    <main>
+      <!-- Block price -->
+      <div class="block-price">
+        <div class="price-container">
+          <div class="price-title">
+            <h2>Блок рассчета стоимости</h2>
+          </div>
+          <div class="price-description">
+            <p>Если у вас есть договор с Major Express воспользуйтесь личным кабинетом</p>
+          </div>
+          <div class="price-form-container">
+            <div class="form-whence float-left">
+              <div class="form-title">
+                <h3>Откуда забрать?</h3>
+              </div>
+              <form class="form-selects" action="">
+                <p class="float-left">Страна</p>
+                <select class="form-control float-right">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+                <p class="float-left">Город</p>
+                <select class="form-control float-right">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+              </form>
+            </div>
+            <div class="form-where float-right">
+              <div class="form-title">
+                <h3>Куда привезти?</h3>
+              </div>
+              <form class="form-selects" action="">
+                <p class="float-left">Страна</p>
+                <select class="form-control float-right">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+                <p class="float-left">Город</p>
+                <select class="form-control float-right">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+              </form>
+            </div>
+          </div>
+          <div class="parcel-date">
+            <p class="float-left">Дата отправки</p>
+            <div class="date float-right">
+              <div class="parcel-date-icon float-left">
+                <img src="./img/calendar.png" alt="icon">
+              </div>
+              <p class="float-right">10 января с 9:00 до 22:00</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Block cargo -->
+      <div class="block-cargo-type">
+        <div class="cargo-type-container">
+          <form class="form-cargo" action="">
+            <div class="cargo-type">
+              <p class="float-left">Тип груза</p>
+              <select class="form-control float-right">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+            </div>
+            <div class="cargo-weight">
+              <p class="float-left">Вес груза</p>
+              <input class="float-right" type="number">
+            </div>
+            <div class="cargo-dimensions">
+              <p class="float-left">Габариты</p>
+              <input class="float-right" placeholder="Длина (см)" type="number">
+              <input class="float-right" placeholder="Ширина (см)" type="number">
+              <input class="float-right" placeholder="Висота (см)" type="number">
+            </div>
+          </form>
+          <div class="cargo-plus">
+            <div class="cargo-plus-icon float-left">
+              <img src="./img/plus.png" alt="icon">
+            </div>
+            <!-- <input type="file" placeholder="Добавить груз/документ"> -->
+            <p class="float-right" type="file">Добавить груз/документ</p>
+          </div>
+        </div>
+      </div>
+      <!-- Block delivery -->
+      <div class="block-delivery">
+        <div class="delivery-container">
+          <div class="delivery-button">
+            <button class="float-left">Сделать заказ</button>
+            <button class="float-right">Рассчитать</button>
+          </div>
+          <div class="delivery-choice">
+            <div class="delivery-office float-left">
+              <div class="delivery-icon" style="width: 55%;">
+                <img src="./img/geo-location.png" alt="icon">
+              </div>
+              <div class="delivery-choice-description">
+                <h4>Отправить из офиса</h4>
+                <p>Цена: <span>1500р</span></p>
+              </div>
+            </div>
+            <div class="delivery-courier-online float-left">
+              <div class="delivery-icon" style="width: 51%;">
+                <img src="./img/desktop.png" alt="icon">
+              </div>
+              <div class="delivery-choice-description">
+                <h4>Вызвать курьера онлайн</h4>
+                <p>Цена: <span>1500р</span></p>
+              </div>
+            </div>
+            <div class="delivery-courier-phone float-left">
+              <div class="delivery-icon" style="width: 39%;">
+                <img src="./img/phone.png" alt="icon">
+              </div>
+              <div class="delivery-choice-description">
+                <h4>Вызвать курьера по телефону</h4>
+                <p>Цена: <span>1500р</span></p>
+              </div>
+            </div>
+          </div>
+          <div class="delivery-address">
+            <div class="delivery-address-container">
+              <div class="delivery-address-block float-left">
+                <button class="delivery-branch">Отделение №1</button>
+                <button class="delivery-branch">Отделение №2</button>
+                <p>ул.Барклая, 12/12, Львов, 79000</p>
+                <p>Пн-Вск  10:00-21:00</p>
+                <p>8(495)737-23-52</p>
+                <p>
+                  Дополнительная информация, текст Дополнительная информация, текст Дополнительная информация, текст Дополнительная информация 
+                </p>
+              </div>
+              <div class="delivery-address-map float-right">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25366.380368217397!2d24.010451881414863!3d49.83985197975094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add6bf9d8c3b7%3A0xc0230f2a9e386c1c!2z0JPQsNC70LjRhtGM0LrQuNC5INGA0LDQudC-0L0sINCb0YzQstGW0LIsINCb0YzQstGW0LLRgdGM0LrQsCDQvtCx0LvQsNGB0YLRjCwgNzkwMDA!5e0!3m2!1suk!2sua!4v1703349447021!5m2!1suk!2sua" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+            </div>
+            <div class="address-instruction">
+              <p class="float-left">Введите адрес<span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+              </p>
+              <p class="float-left" style="color: #e98007;">Укажите контактные данные<span class="glyphicon glyphicon-menu-right" style="color: white;" aria-hidden="true"></span> </p>
+              <p class="float-left">Укажите детали</p>
+            </div>
+            <div class="address-form">
+              <div class="sender-address float-left">
+                <div class="form-title">
+                  <h3>Адрес отправителя</h3>
+                </div>
+                <form action="">
+                  <div class="form-sender">
+                    <p class="float-left">Страна</p>
+                    <input type="text" class="float-right">
+                  </div>
+                  <div class="form-sender">
+                    <p class="float-left">Город</p>
+                    <input type="text" class="float-right">
+                  </div>
+                  <div class="form-sender">
+                    <p class="float-left">Адрес</p>
+                    <input type="text" placeholder="Улица, дом, офис, квартира" class="float-right">
+                  </div>
+                </form>
+              </div>
+              <div class="recipient-address float-right">
+                <div class="form-title">
+                  <h3>Адрес получателя</h3>
+                </div>
+                <form action="">
+                  <div class="form-recipient">
+                    <p class="float-left">Страна</p>
+                    <input type="text" class="float-right">
+                  </div>
+                  <div class="form-recipient">
+                    <p class="float-left">Город</p>
+                    <input type="text" class="float-right">
+                  </div>
+                  <div class="form-recipient">
+                    <p class="float-left">Адрес</p>
+                    <input type="text" placeholder="Улица, дом, офис, квартира" class="float-right">
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>    
+    </main>
+    
+
+    <!-- <script src="./bootstrap-3.4.1-dist/bootstrap-3.4.1-dist/js/bootstrap.min.js"></script> -->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+  </body>
+</html>
